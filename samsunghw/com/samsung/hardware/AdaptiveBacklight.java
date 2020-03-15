@@ -16,7 +16,7 @@
 
 package com.samsung.hardware;
 
-import android.os.FileUtils;
+import com.android.internal.util.dotos.FileUtils;
 
 /**
  * Adaptive backlight support (this refers to technologies like NVIDIA SmartDimmer,

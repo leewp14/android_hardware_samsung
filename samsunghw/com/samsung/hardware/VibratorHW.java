@@ -16,7 +16,7 @@
 
 package com.samsung.hardware;
 
-import android.os.FileUtils;
+import com.android.internal.util.dotos.FileUtils;
 
 public class VibratorHW {
 

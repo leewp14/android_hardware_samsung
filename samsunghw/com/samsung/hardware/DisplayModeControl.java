@@ -18,7 +18,7 @@
 package com.samsung.hardware;
 
 import samsung.hardware.DisplayMode;
-import android.os.FileUtils;
+import com.android.internal.util.dotos.FileUtils;
 
 import java.util.Arrays;
 
