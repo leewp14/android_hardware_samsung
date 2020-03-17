@@ -1558,8 +1558,8 @@ static int hwc_device_open(const struct hw_module_t* module, const char* name,
             );
 
         if (refreshRate == 0) {
-            ALOGW("%s: Invalid refresh rate, using 60 Hz", __FUNCTION__);
-            refreshRate = 60;  /* 60 Hz */
+            ALOGW("%s: Invalid refresh rate, using 57 Hz", __FUNCTION__);
+            refreshRate = 57;  /* 57 Hz */
         }
 
         dev->vsync_period = _VSYNC_PERIOD / refreshRate;
