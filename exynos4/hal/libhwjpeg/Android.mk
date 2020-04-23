@@ -20,15 +20,14 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH) \
 	$(LOCAL_PATH)/../include
 
 LOCAL_SRC_FILES:= \
-	jpeg_hal_unit.c \
+	jpeg_hal_unit.cpp \
 
 LOCAL_SHARED_LIBRARIES :=    \
 	libcutils	\
+	liblog		\
 
 LOCAL_STATIC_LIBRARIES := \
 
 LOCAL_MODULE:= libhwjpeg
-
-LOCAL_MODULE_TAGS := eng
 
 include $(BUILD_SHARED_LIBRARY)

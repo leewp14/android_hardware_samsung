@@ -55,7 +55,7 @@
 #endif
 
 /* numbers of buffers for page flipping */
-#define NUM_BUFFERS 2   //wjj, only set 2 or 3
+#define NUM_BUFFERS 3   //wjj, only set 2 or 3
 #define WAIT_VSYNC_OPT
 
 #define FBIO_WAITFORVSYNC       _IOW('F', 0x20, __u32)
@@ -360,7 +360,7 @@ int init_frame_buffer_locked(struct private_module_t* module)
             fbSize, intptr_t(vaddr), 0, dup(fd), 0);
 
     module->numBuffers = info.yres_virtual / info.yres;
-    module->bufferMask = 0;
+    module->bufferIndex = 0;
 
     return 0;
 }
